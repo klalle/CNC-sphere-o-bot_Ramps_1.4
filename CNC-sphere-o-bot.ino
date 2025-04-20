@@ -37,14 +37,14 @@
 
 #define initSting "EBBv13_and_above Protocol emulated by Eggduino-Firmware V1.6a"
 //Rotational Stepper:
-#define step1 2           // Originally pin 7
-#define dir1 5            // Originally pin 8
-#define enableRotMotor 8  // Originally pin 4
+#define step1 54           // Originally pin 7
+#define dir1 55            // Originally pin 8
+#define enableRotMotor 38  // Originally pin 4
 #define rotMicrostep 16  //MicrostepMode, only 1,2,4,8,16 allowed, because of Integer-Math in this Sketch
 //Pen Stepper:
-#define step2 3           // Originally pin 12
-#define dir2 6            // Originally pin 5
-#define enablePenMotor 8  // Originally pin 4
+#define step2 60           // Originally pin 12
+#define dir2 61            // Originally pin 5
+#define enablePenMotor 56  // Originally pin 4
 #define penMicrostep 16 //MicrostepMode, only 1,2,4,8,16 allowed, because of Integer-Math in this Sketch
 
 #define servoPin 11 //Servo
@@ -95,8 +95,9 @@ float penSpeed=0; // these are local variables for Function SteppermotorMove-Com
 boolean motorsEnabled = 0;
 
 void setup() {   
-	Serial.begin(9600);
- Serial.print ("hi");
+	Serial.begin(115200);
+ 	Serial.print ("hi");
+
 	makeComInterface();
 	initHardware();
 }
