@@ -6,6 +6,7 @@ The stepper drivers should be plugged into the X and Y sockets on the shield wit
 I use DRV8825 which supports 32 microstepping, so i set this code at its max 16 microstepps, and modifies the python code that sends the command to convert it accordingly.
 
 I run the sphere-o-bot with a modified version of the eggbot extension installed in inkscape 0.92 that you find [here](https://github.com/klalle/EggBot_Ramps_1.4)
+See tutorial etc [here](https://wiki.evilmadscientist.com/The_Original_Egg-Bot_Kit)
 
 ### wiering
 - **Servo that lifts the pen:**
