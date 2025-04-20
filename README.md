@@ -8,7 +8,7 @@ I use DRV8825 which supports 32 microstepping, so i set this code at its max 16 
 I run the sphere-o-bot with a modified version of the eggbot extension installed in inkscape 0.92 that you find [here](https://github.com/klalle/EggBot_Ramps_1.4)
 See tutorial etc [here](https://wiki.evilmadscientist.com/The_Original_Egg-Bot_Kit)
 
-### wiering
+### wiring
 - **Servo that lifts the pen:**
     - BROWN--> GND, RED--> +5V, , YELLOW--> D11 (just next to the reset-btn)
     - Do not forget to jump the endstop-enable pins on the other side of the reset-btn to drive the servo.
